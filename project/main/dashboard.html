@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="style/Images/logo-color.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - AWT Cinnamon Traders</title>
+    <link rel="stylesheet" href="style/dashboard.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#about" class="split">About</a>
+      </div>
+    
+    <!-- Sidebar -->
+   
+    <div class="sidebar">
+        <ul>
+            <li><a href="#dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="#products"><i class="fas fa-box"></i> Manage Products</a></li>
+            <li><a href="#orders"><i class="fas fa-shopping-cart"></i> Manage Orders</a></li>
+            <li><a href="#users"><i class="fas fa-users"></i> Manage Users</a></li>
+
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <div class="user-profile">Welcome, Admin</div>
+            <button class="logout" id="logoutBtn">Logout</button>
+        </div>
+
+        <section id="dashboard">
+            <h2>Admin Dashboard</h2>
+            <div class="dashboard-overview">
+                <div class="stat-card">Total Products: <span id="product-count">50</span></div>
+                <div class="stat-card">Total Orders: <span id="order-count">120</span></div>
+                <div class="stat-card">Total Users: <span id="user-count">200</span></div>
+            </div>
+        </section>
+
+        <section id="products">
+            <h2>Manage Products</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be dynamically loaded -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="orders">
+            <h2>Manage Orders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer Name</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be dynamically loaded -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="users">
+            <h2>Manage Users</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be dynamically loaded -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="SFiles/dasscript.js"></script>
+</body>
+</html>
